@@ -2,6 +2,7 @@ package org.compsat.pisces
 
 class Course {
 	String description
+	String code
 	Integer price
 	//String prerequisites
 	int durationInDays
@@ -11,6 +12,7 @@ class Course {
 	
     static constraints = {
     	description blank: false
+		code blank: false
     	price min: 0
     	durationInDays min: 0
 		prerequisites editable: true
